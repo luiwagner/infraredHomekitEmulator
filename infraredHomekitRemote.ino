@@ -9,13 +9,12 @@ void setup() {
   delay(100);
   homeSpan.begin(Category::Lighting,"Zimmerlampe"); // Create Homespan Device
   homeSpan.setPairingCode("11112222"); //Set Pairing Code
-  homeSpan.setWifiCredentials("SSID", "Password"); // Configure Wifi Credentials
+  homeSpan.setWifiCredentials("SSID", "PASSWORD"); // Configure Wifi Credentials
 
   new SpanAccessory(); 
   
     new Service::AccessoryInformation();    
       new Characteristic::Identify();
-      new Characteristic::Name("Zimmerlampe");
       new Characteristic::Manufacturer("github: wagnerlui");
   
     new roomLamp();
