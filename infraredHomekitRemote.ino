@@ -15,6 +15,7 @@ void setup() {
   
     new Service::AccessoryInformation();    
       new Characteristic::Identify();
+      new Characteristic::Name("Zimmerlampe");
       new Characteristic::Manufacturer("github: wagnerlui");
   
     new roomLamp();

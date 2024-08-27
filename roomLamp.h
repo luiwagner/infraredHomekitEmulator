@@ -8,7 +8,7 @@ struct roomLamp : Service::LightBulb {
 
     power=new Characteristic::On();
                 
-    level=new Characteristic::Brightness(0);    //  NEW! Instantiate the Brightness Characteristic with an initial value of 50% (same as we did in Example 4)
+    level=new Characteristic::Brightness(50);
     level->setRange(4,100,6);   //  Lamp got 12 Brightness level. 8 Percent per Step * 12 Steps + 4 rest = 100
     
     oldBrightness = 0;
