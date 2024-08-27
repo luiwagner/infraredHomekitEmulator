@@ -1,5 +1,5 @@
 # Infrared Homekit Remote
-Send commands to change the state and brightness of an infrared lamp.
+Send commands to change the state and brightness of an infrared lamp via an ESP32.
 
 ## Dependencies
 - [IrRemote](https://github.com/Arduino-IRremote/Arduino-IRremote): Used to send Infrared Signals via LED
